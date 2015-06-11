@@ -4,27 +4,27 @@ package L20;
 				// Setting variables to private makes this happen. 
 				// You would then have to get to these variables via getter or setter methods only
 
-class Person{
+class Person{								// it's not wrong to create a class in the same file as another class
 	String name;
 	int age;
 		
-		void Speak(){
+		void Speak(){						// method
 			System.out.println("Hello there, My name is "+name + ". I'm " +age + " years old. Pleased to meet you");
 		
 		}
-		void CalcYrsToRetirement(){
+		void CalcYrsToRetirement(){			// method
 			System.out.println("My name is "+ name + ". It'll be " +(65-age) +" years to my retirement. ");
 		}
-		int CalcYrsToRetire(){
+		int CalcYrsToRetire(){				// method that returns an int
 			int yearsLeft = 65-age;
 			return yearsLeft;				// when you have a return value from a method you can set a variable = to this return value
 											// from the main method. For example
 											// int yearsp1= p1.CalcYrsToRetire(); then sysout yearsp1
 		}
-		int getAge(){						// getter method
+		int getAge(){						// getter method that returns an int
 			return age;
 		}
-		String getName(){					// getter method
+		String getName(){					// getter method that returns an int
 			return name;
 		}
 }
