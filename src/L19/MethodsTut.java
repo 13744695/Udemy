@@ -1,7 +1,8 @@
 package L19;
 	class Person{										
 
-
+// methods start with lower case except in the case of constructors
+		
 		String name;
 		int age;
 		

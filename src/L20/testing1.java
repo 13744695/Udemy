@@ -1,6 +1,5 @@
 package L20;
 
-import java.util.Scanner;
 import java.util.*;
 public class testing1 {
 	public static void main(String []args){
@@ -40,11 +39,11 @@ public class testing1 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("That's great!! So tell me something " + name +" Which town do you live in? ");
 		String town = sc.nextLine();
-		
-		System.out.println("Oh I've been to "+ town +" "+ ((int)Math.random()) + " times, you know! I do like it");
+		int visits = (int) (Math.random()*8) +1;
+		System.out.println("Oh I've been to "+ town +" " +visits +"  times you know! I do like it");
 		
 	}
-	public static void getRandomInt(min, max) {
-		  return Math.floor(Math.random() * (max - min)) + min;
-		}
+
+
 }
+
