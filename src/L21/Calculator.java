@@ -16,9 +16,9 @@ public class Calculator {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Type - add - sub - mul - div for your choice of calculation");
 		String choice = sc.nextLine();
-		System.out.println("Your choice was " +choice +" Now, Please enter your first number");
+		System.out.println("Your choice was " +choice +".   Now, Please enter your first number");
 		int num1 = sc.nextInt();
-		System.out.println("Your first number is " +num1 +" Now, Please enter your second number");
+		System.out.println("Your first number is " +num1 +".   Now, Please enter your second number");
 		int num2 = sc.nextInt();
 		System.out.println(" Your second number is " +num2);
 		calculator(choice, num1, num2);
