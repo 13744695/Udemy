@@ -3,6 +3,7 @@ package L23;
 
 //_______________________________________Main Application Class__________________________________________________
 
+	// Constructors must have the same name as the class.
 	// Constructors are often used to initialise instance variables
 	// Constructor run every time an object is created.
 	// Constructors can take parameters in the same way a method can
@@ -22,6 +23,17 @@ public class ConstructorClasses {
 		
 		
 		Machine m3 = new Machine("Jerry",12);
+		
+		
+		System.out.println("Quiz time");
+		System.out.println();
+		System.out.println("What's special about naming a constructor? : ");
+		System.out.println("What are constructors used for? : ");
+		System.out.println("What happens to a constructor everytime an object is created? :");
+		System.out.println("Can a constructor take parameters like a method does? :");
+		System.out.println("Can there be different constructors named the same? :");
+		System.out.println();
+		System.out.println();
 		
 	}
 
