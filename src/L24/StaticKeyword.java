@@ -40,5 +40,5 @@ class Thing{
 	
 											// for simplicities sake, these are being declared as public, you'd most often declare as private
 	
-	
+
 }

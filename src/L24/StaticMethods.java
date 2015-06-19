@@ -29,30 +29,15 @@ public class StaticMethods {
 																// see the declaration in the Thingzoid class
 		System.out.println("After I accessed the Thingzoid class a few times the count is still the same as the number of objects created, count is: " +Thingzoid.count);
 		System.out.println("The count feature only counts when objects have been created. ");
-		//_________________________________________________________________________________________________
-		System.out.println();
-		System.out.println();
-		System.out.println("Quiz time");
-		System.out.println("How can you call a non static method? :");
-		System.out.println("How can you call a static method? :");
-		System.out.println("Can static methods access static variables? :");
-		System.out.println("Can static methods access non-static variables? :");
-		System.out.println("When do static instance variables exist? Before or after you create objects? :");
-		System.out.println("When do non-static class variables exist? Before or after you create objects? :");
-		System.out.println("What are non-static class variables associated with? :");
-		System.out.println("Why or how would you use the 'final' field? :");
-		System.out.println("What are the naming conventions in relation to using a final field? :");
-		System.out.println("What are the rules in relation to assigning a value when using a final field? :");
-		System.out.println("What are needed to ");
-		System.out.println();
-		System.out.println();
+		
+
 	}
 }
 
 //_______________________________________Thingzoid Class____________________________________________________
 
 class Thingzoid{
-	
+	public int id;
 	public String name;
 	public static String desc;
 	public final static int UNLUCKY_NUMBER= 13;					// Constant variables such as PI are represented in java by capital letters. 
@@ -64,6 +49,7 @@ class Thingzoid{
 	public static int count = 0;								// because this is a static variable, we know it belongs to the class and not to each object.
 	
 	public Thingzoid(){											// this is a constructor created specifically to count the number of times the class is accessed.
+		id = count;
 		count ++;
 		
 	}
@@ -71,6 +57,7 @@ class Thingzoid{
 	public void showName(){
 		System.out.println("name: "+name);
 		System.out.println(desc +" called " + name);
+		System.out.println("object id is: "+id +"  my name is: "+name);
 	}
 	public static void showInfo(){
 		System.out.println("The static method 'showInfo' has been called.");
