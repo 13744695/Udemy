@@ -2,6 +2,8 @@ package QuizTime;
 
 import java.util.Scanner;
 
+import L27.Machine;
+
 /*
  * Given the fact I've been revising Java from scratch to help cement detail the following quiz has evolved:
  * 
@@ -40,6 +42,7 @@ public class Quiz {
 		case "f" : fin(); break;
 		case "x" : count(); break;
 		case "y" : StrBuilder(); break;
+		case "i" : inher(); break;
 		case "exit" : System.out.println("Thank you for taking our quiz, we hope you learned something while you were here. \n Happy Java!!"); break;
 		default: openQuiz();						// invalid value: then run the openQuiz method again
 		}
@@ -54,7 +57,18 @@ public class Quiz {
 		System.out.println("What would you use for an if statement when you want to output 'right' if 'ans' is equal to 'black'");
 		System.out.println("Writing up or editing a README.md file in github, how do you get the big bold letters and normal text to work?");
 		System.out.println("Of the following, which are started with a capital letter by convention? : \n class \n package \n constructors \n methods");
-		System.out.println();
+		System.out.println("What's the eclipse formating shortcut code? ");
+		System.out.println("What's the eclipse shortcut to typing the main method? ");
+		System.out.println("What's the eclipse shortcut to run the application? ");
+		System.out.println("What's the eclipse shortcut to organise imporst?");
+		System.out.println("What's the eclipse shortcut for renaming a variable name throughout the code? ");
+		System.out.println("How do you rename a class name?");
+		System.out.println("What's the eclipse shortcut to remove lines of code?");
+		System.out.println("What's the eclipse ");
+		System.out.println("What's the eclipse ");
+		System.out.println("What's the eclipse ");
+		System.out.println("What's the eclipse ");
+		System.out.println("What's the eclipse ");
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("WHEN READY TO VIEW ANSWERS TYPE \"go\"");
@@ -68,6 +82,22 @@ public class Quiz {
 						System.out.println("     "+"Class gets a capital letter when named, packages get lower case.");
 						System.out.println("     "+"Constructors get a capital letter - BECAUSE IT'S ALWAYS THE SAME NAME AS IT'S CLASS");
 						System.out.println("     "+"Methods get a lower case letter");
+						System.out.println("     "+"the eclipse formating shortcut code is ctrl shift f ");
+						System.out.println("     "+"In eclipse - 'main' ctrl space - will print the main method heading");
+						System.out.println("     "+"In eclipse the shortcut to run an application is - ctrl and f11 ");
+						System.out.println("     "+"In eclipse the shortcut to organise imports is - ctrl shift and o - it will also remove unwanted imports");
+						System.out.println("     "+"In eclipse the shortcut for renaming a variable name throughout the code is - select the name, refactor, rename and retype the name");
+						System.out.println("     "+"In eclipse you can do the same thing. select the file, right click, refactor, rename ");
+						System.out.println("     "+"In eclipse the shortcut to remove a full line of code, click in the line and crtl d deletes the line without having to select it.");
+						System.out.println("     "+"In eclipse the shortcut to ");
+						System.out.println("     "+"In eclipse the shortcut to ");
+						System.out.println("     "+"In eclipse the shortcut to ");
+						System.out.println("     "+"In eclipse the shortcut to ");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						
+						
 						
 						Scanner sc1 = new Scanner(System.in);
 						System.out.println("WHEN READY TO GO BACK TO CHOICES TYPE \"go\" OR \"exit\" to exit");
@@ -362,4 +392,80 @@ public class Quiz {
 		}
 		}
 		
-}
+		//___________________________________________________________________________________________________________________________________________
+		
+				public static void inher() {
+					
+					System.out.println("How do you show inheritance from one class to the other, which is child class?");
+					System.out.println("How do you keep a variable for use only within its own class?");
+					System.out.println("How do you allow the variable to be accessed from anywhere?");	
+					System.out.println("How do you allow it to be accessed only from within the package?");
+					System.out.println();
+					System.out.println();
+					
+					Scanner sc = new Scanner(System.in);
+					System.out.println("WHEN READY TO VIEW ANSWERS TYPE \"go\"");
+					String go = sc.nextLine();
+					
+					if (go.equals("go")){
+					
+						System.out.println("     "+"public class Car extends Machine - is an example of where a Car class inherits from a Machine class, \n the car class is the child class");
+						System.out.println("     "+"you keep a variable for use only within its own class by making it private");
+						System.out.println("     "+"you allow the variable to be accessed from anywhere, by not having any keyword");
+						System.out.println("     "+"you allow it to be accessed only from within the package, by making it protected");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						
+						Scanner sc1 = new Scanner(System.in);
+						System.out.println("WHEN READY TO GO BACK TO CHOICES TYPE \"go\" OR \"exit\" to exit");
+						String go1 = sc.nextLine();	
+						 if (go1.equalsIgnoreCase("go")){
+							 openQuiz();
+						 }
+						 else if(go1.equalsIgnoreCase("exit")){
+							System.out.println("Thank you for taking our quiz, we hope you learned something while you were here. \n Happy Java!!");
+						 }
+					}
+					}
+	
+				
+				
+				//___________________________________________________________________________________________________________________________________________
+				
+				public static void spare() {
+					
+					System.out.println("");
+					System.out.println();
+					System.out.println();	
+					System.out.println();
+					System.out.println();
+					System.out.println();
+					
+					Scanner sc = new Scanner(System.in);
+					System.out.println("WHEN READY TO VIEW ANSWERS TYPE \"go\"");
+					String go = sc.nextLine();
+					
+					if (go.equals("go")){
+					
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						
+						Scanner sc1 = new Scanner(System.in);
+						System.out.println("WHEN READY TO GO BACK TO CHOICES TYPE \"go\" OR \"exit\" to exit");
+						String go1 = sc.nextLine();	
+						 if (go1.equalsIgnoreCase("go")){
+							 openQuiz();
+						 }
+						 else if(go1.equalsIgnoreCase("exit")){
+							System.out.println("Thank you for taking our quiz, we hope you learned something while you were here. \n Happy Java!!");
+						 }
+					}
+					}
+				}
+		
+
+
