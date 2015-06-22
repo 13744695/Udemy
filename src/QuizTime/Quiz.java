@@ -47,7 +47,7 @@ public class Quiz {
 		default: openQuiz();						// invalid value: then run the openQuiz method again
 		}
 		}
-	//__________________________________________________________________________________________________________________________________________	
+	//_________________________________________________________RANDOM_________________________________________________________________________________	
 		public static void random(){
 		System.out.println("RANDOM CATEGORY QUESTIONS");
 		System.out.println();
@@ -64,8 +64,8 @@ public class Quiz {
 		System.out.println("What's the eclipse shortcut for renaming a variable name throughout the code? ");
 		System.out.println("How do you rename a class name?");
 		System.out.println("What's the eclipse shortcut to remove lines of code?");
-		System.out.println("What's the eclipse ");
-		System.out.println("What's the eclipse ");
+		System.out.println("What's the two purposes of packages? ");
+		System.out.println("How can you import classes from another package if you need them? ");
 		System.out.println("What's the eclipse ");
 		System.out.println("What's the eclipse ");
 		System.out.println("What's the eclipse ");
@@ -89,11 +89,11 @@ public class Quiz {
 						System.out.println("     "+"In eclipse the shortcut for renaming a variable name throughout the code is - select the name, refactor, rename and retype the name");
 						System.out.println("     "+"In eclipse you can do the same thing. select the file, right click, refactor, rename ");
 						System.out.println("     "+"In eclipse the shortcut to remove a full line of code, click in the line and crtl d deletes the line without having to select it.");
+						System.out.println("     "+"Packages enable you to organise your work in a sensible fashion and \n prevent conflicts between classnames where the classes are of the same name ");
 						System.out.println("     "+"In eclipse the shortcut to ");
 						System.out.println("     "+"In eclipse the shortcut to ");
 						System.out.println("     "+"In eclipse the shortcut to ");
-						System.out.println("     "+"In eclipse the shortcut to ");
-						System.out.println("     "+"");
+						System.out.println("     "+"To import classes from another package you type import packageName.className; or import packageName.*; \n if you want access to all the classes in that package.");
 						System.out.println("     "+"");
 						System.out.println("     "+"");
 						
@@ -111,7 +111,7 @@ public class Quiz {
 		}
 		
 		}
-		//__________________________________________________________________________________________________________________________________________	
+		//__________________________________________________CONSTRUCTORS________________________________________________________________________________________	
 		
 		public static void construct(){
 		System.out.println("CONSTRUCTOR QUESTIONS");
@@ -160,7 +160,7 @@ public class Quiz {
 		
 		}
 
-		//__________________________________________________________________________________________________________________________________________	
+		//_____________________________________________STATIC VARIABLES AND METHODS_____________________________________________________________________________________________	
 		public static void stat(){
 		System.out.println("STATIC KEYWORD QUESTIONS");
 		System.out.println();
@@ -228,7 +228,7 @@ public class Quiz {
 		
 		}
 
-		//__________________________________________________________________________________________________________________________________________	
+		//________________________________________________________THE FINAL KEYWORD__________________________________________________________________________________	
 		public static void fin() {
 		
 		System.out.println("Some 'final' questions");
@@ -273,7 +273,7 @@ public class Quiz {
 		
 		}
 
-		//__________________________________________________________________________________________________________________________________________	
+		//___________________________________HOW TO COUNT NUMBER OF OBJECTS ARE THEY ARE CREATED____________________________________________	
 		public static void count() {
 		System.out.println("Some counting questions");
 		System.out.println();
@@ -323,7 +323,7 @@ public class Quiz {
 		
 		}
 	
-		//___________________________________________________________________________________________________________________________________________
+		//_________________________________________________STRING BUILDER__________________________________________________________________________________________
 		
 		public static void StrBuilder() {
 			
@@ -392,7 +392,7 @@ public class Quiz {
 		}
 		}
 		
-		//___________________________________________________________________________________________________________________________________________
+		//___________________________________________________INHERITANCE________________________________________________________________________________________
 		
 				public static void inher() {
 					
@@ -430,11 +430,11 @@ public class Quiz {
 	
 				
 				
-				//___________________________________________________________________________________________________________________________________________
+				//_____________________________________________________SPARE TEMPLATE FOR OTHER CATEGORIES______________________________________________________________________________________
 				
 				public static void spare() {
 					
-					System.out.println("");
+					System.out.println();
 					System.out.println();
 					System.out.println();	
 					System.out.println();
