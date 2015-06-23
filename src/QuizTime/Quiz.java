@@ -3,6 +3,7 @@ package QuizTime;
 import java.util.Scanner;
 
 import L27.Machine;
+import L29.Info;
 
 /*
  * Given the fact I've been revising Java from scratch to help cement detail the following quiz has evolved:
@@ -43,6 +44,7 @@ public class Quiz {
 		case "x" : count(); break;
 		case "y" : StrBuilder(); break;
 		case "i" : inher(); break;
+		case "z" : interfaces(); break;
 		case "exit" : System.out.println("Thank you for taking our quiz, we hope you learned something while you were here. \n Happy Java!!"); break;
 		default: openQuiz();						// invalid value: then run the openQuiz method again
 		}
@@ -66,8 +68,8 @@ public class Quiz {
 		System.out.println("What's the eclipse shortcut to remove lines of code?");
 		System.out.println("What's the two purposes of packages? ");
 		System.out.println("How can you import classes from another package if you need them? ");
-		System.out.println("What's the eclipse ");
-		System.out.println("What's the eclipse ");
+		System.out.println("In what way are packages similar to folders?");
+		System.out.println("What's the convention for keeping package names unique when sharing programs to prevent conflicts? ");
 		System.out.println("What's the eclipse ");
 		
 		Scanner sc = new Scanner(System.in);
@@ -94,8 +96,8 @@ public class Quiz {
 						System.out.println("     "+"In eclipse the shortcut to ");
 						System.out.println("     "+"In eclipse the shortcut to ");
 						System.out.println("     "+"To import classes from another package you type import packageName.className; or import packageName.*; \n if you want access to all the classes in that package.");
-						System.out.println("     "+"");
-						System.out.println("     "+"");
+						System.out.println("     "+"Packages are similar to folders in that you can have packages within java, they are separated by dots");
+						System.out.println("     "+"the convention for keeping package names unique when sharing programs to prevent conflicts \n is to name the top package with your web address in reverse. com.webaddress.packageName;");
 						
 						
 						
@@ -428,7 +430,65 @@ public class Quiz {
 					}
 					}
 	
+				//_____________________________________________________INTERFACES______________________________________________________________________________________
 				
+				public static void interfaces() {
+					
+					System.out.println("What are interfaces used for in java? ");
+					System.out.println("What are methods like in the interface class? ");
+					System.out.println("How do you tell an object class that it is to be associated with an interface?");	
+					System.out.println("How do you tell an object what methods to bring in from the interface? ");
+					System.out.println("Can more than one interface be implemented in an object class? If yes, how?");
+					System.out.println("Can more than one extends be used in an object class? If yes, how?");
+					System.out.println("Can you add more methods to the interface class after the object class has been hooked up to it?");
+					System.out.println("Naming conventions for the interface class?");
+					System.out.println();
+					
+					Scanner sc = new Scanner(System.in);
+					System.out.println("WHEN READY TO VIEW ANSWERS TYPE \"go\"");
+					String go = sc.nextLine();
+					
+					if (go.equals("go")){
+					
+						System.out.println("     "+"These answers may not be 100% correct, they are my interpretation on the topic of interfaces");
+						System.out.println("     "+"");
+						System.out.println("     "+"Interfaces can be used when you want to make sure an object class is using a specific set of methods as declared in the interface");
+						System.out.println("     "+"If you are designing a program that will have several vehicle objects for example, the car class and truck class etc");
+						System.out.println("     "+"... might all have similar methods that are useful to have. ");
+						System.out.println("     "+"... These methods could be grouped into an info interface (as a catagory) ");
+						System.out.println("     "+"... then you can set up an object via the interface which would only have access to the methods associated with the interface");
+						System.out.println("     "+"Example of calling an interface object:  Info info1 = new Machine();");
+						System.out.println("     "+"... Where Info is the name of the interface class. ");
+						System.out.println("     "+"... The Info name can be substituted in anywhere the object class name is usually used... EXCEPT...");
+						System.out.println("     "+"... after the 'new' keyword. ");
+						System.out.println("     "+"Methods in the interface are essentially just a list of method headers. \n ... They have no body or no content in the interface class");
+						System.out.println("     "+"The object class is associated with the interface by using the implements keyword. \n eg public class Machine implements Info {  ");
+						System.out.println("     "+"The methods are typed up within whichever class they are associated with via this implementation");
+						System.out.println("     "+"On typing in the keyword implements, eclipse will ask to add unimplemented methods. ");
+						System.out.println("     "+"... thus forcing you to ensure each method in the interface is used in that object class");
+						System.out.println("     "+"a class can implement any number of interfaces. they would be separated by commas");
+						System.out.println("     "+"a class can only extend one parent class though");
+						System.out.println("     "+"As you add more methods to the interface class, \n ...eclipse will ask you to add unimplemented methods for each related object class");
+						System.out.println("     "+"interfaces are named with a capital letter as are classes. \n ...I good idea might be to start each implement class name with an I to help identify it as an interface");
+						System.out.println("     "+"In some cases interfaces are created in the design phase as a person considers what methods will be needed commonly across classes.");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						System.out.println("     "+"");						
+						
+						
+						
+						Scanner sc1 = new Scanner(System.in);
+						System.out.println("WHEN READY TO GO BACK TO CHOICES TYPE \"go\" OR \"exit\" to exit");
+						String go1 = sc.nextLine();	
+						 if (go1.equalsIgnoreCase("go")){
+							 openQuiz();
+						 }
+						 else if(go1.equalsIgnoreCase("exit")){
+							System.out.println("Thank you for taking our quiz, we hope you learned something while you were here. \n Happy Java!!");
+						 }
+					}
+					}
 				
 				//_____________________________________________________SPARE TEMPLATE FOR OTHER CATEGORIES______________________________________________________________________________________
 				
