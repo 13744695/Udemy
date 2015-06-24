@@ -33,7 +33,17 @@ public class Quiz {
 
 		public static void openQuiz() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Choose from the following options \n r for random category questions \n c for constructor type questions \n s for 'static' type questions \n f for 'final' related questions \n x for counting questions \n y for String related questions \n or 'exit'");
+		System.out.println("Choose from the following question catagory options "
+				+ "\n r for random  "
+				+ "\n c for constructor  "
+				+ "\n s for 'static'  "
+				+ "\n f for 'final'  "
+				+ "\n x for counting  "
+				+ "\n y for String  "
+				+ "\n i for inheritance "
+				+ "\n z for interfaces "
+				+ "\n p for public private protected & encapsulation "
+				+ "\n or 'exit'");
 		String ans1 = sc.nextLine();
 		
 		switch (ans1){
@@ -45,6 +55,8 @@ public class Quiz {
 		case "y" : StrBuilder(); break;
 		case "i" : inher(); break;
 		case "z" : interfaces(); break;
+		case "p" : ppp(); break;
+		
 		case "exit" : System.out.println("Thank you for taking our quiz, we hope you learned something while you were here. \n Happy Java!!"); break;
 		default: openQuiz();						// invalid value: then run the openQuiz method again
 		}
@@ -411,7 +423,7 @@ public class Quiz {
 					
 					if (go.equals("go")){
 					
-						System.out.println("     "+"public class Car extends Machine - is an example of where a Car class inherits from a Machine class, \n the car class is the child class");
+						System.out.println("     "+"public class Car extends Machine - is an example of where a Car class inherits from a Machine class, \n            the car class is the child class");
 						System.out.println("     "+"you keep a variable for use only within its own class by making it private");
 						System.out.println("     "+"you allow the variable to be accessed from anywhere, by not having any keyword");
 						System.out.println("     "+"you allow it to be accessed only from within the package, by making it protected");
@@ -489,7 +501,42 @@ public class Quiz {
 						 }
 					}
 					}
+				//_____________________________________________________PUBLIC PRIVATE PROTECTED______________________________________________________________________________________
 				
+				public static void ppp() {
+					
+					System.out.println("Give a summary of what is meant by public, private and protected");
+					System.out.println("What policy should you try to follow in deciding on whether a variable is public private or protected");
+					System.out.println("So what is encapsulation about then?");	
+					System.out.println("When might you declare a public variable?");
+					System.out.println("How can you let users access private variables? ");
+					System.out.println();
+					
+					Scanner sc = new Scanner(System.in);
+					System.out.println("WHEN READY TO VIEW ANSWERS TYPE \"go\"");
+					String go = sc.nextLine();
+					
+					if (go.equals("go")){
+					
+						System.out.println("     "+"SUMMARY \n -private accessed only within same class \n public accessed from anywhere \n protected accessed from the subclass and same package\n no modifier accessed from the same package only");
+						System.out.println("     "+"You always try to make variables private if you can.  \n getters and setters are used to let people access this variable.");
+						System.out.println("     "+"Objective is to make as much as possible private within a program. \n It prevents cross contamination between classes You just want to have a few methods defined public ");
+						System.out.println("     "+"The idea of encapsulation is you encapsulate the inner workings of that class - within that class. \n - you stop people outside the class getting at the guts of that class\n you expose certain methods for people to use outside that class.");
+						System.out.println("     "+"You can declare public variables but that would usually be when variables are both final and static. \n final means the value can never be changed \n static meaning it's a class variable.");
+						System.out.println("     "+"Getters and setters are used to let people access this variable.\n note: SOURCE - GENERATE GETTERS AND SETTERS - will auto generate the getter and setter methods for you \n note: if a variable is final, then eclipse knows that there's no use for a setter method and won't auto generate one");
+						System.out.println();
+						
+						Scanner sc1 = new Scanner(System.in);
+						System.out.println("WHEN READY TO GO BACK TO CHOICES TYPE \"go\" OR \"exit\" to exit");
+						String go1 = sc.nextLine();	
+						 if (go1.equalsIgnoreCase("go")){
+							 openQuiz();
+						 }
+						 else if(go1.equalsIgnoreCase("exit")){
+							System.out.println("Thank you for taking our quiz, we hope you learned something while you were here. \n Happy Java!!");
+						 }
+					}
+					}
 				//_____________________________________________________SPARE TEMPLATE FOR OTHER CATEGORIES______________________________________________________________________________________
 				
 				public static void spare() {
@@ -525,6 +572,7 @@ public class Quiz {
 						 }
 					}
 					}
+				//_______________________________________________________End of Template_____________________________________________________________________________________________
 				}
 		
 
