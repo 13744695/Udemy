@@ -22,14 +22,14 @@ public interface Info {
 															// This is a variable of type Info, named info1, pointing to an object of type machine
 															// This variable can only be used to access just the methods that are defined in the interface named Info.
 															// When you add new methods to the interface the classed that extend the interfaces throw up errors 
-															// and ask that you implement the methods - furthur errors will be thrown until you save the interface file too.
+															// and ask that you implement the methods - further errors will be thrown until you save the interface file too.
 															//
 															// TIP IT MIGHT BE AN IDEA TO NAME INTERFACES STARTING WITH THE LETTER I. 
 															// ... SO IInfo.java might have been a better name to help identify that it's an interface 
 															// 
 															// In designing a program, you might decide before you start that objects will have a start and stop method etc
 															// These can be put into the interface first at the design stage.
-															//
+															// 
 															//
 	
 															

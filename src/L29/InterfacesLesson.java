@@ -1,6 +1,6 @@
 package L29;
 
-public class MainClass {
+public class InterfacesLesson {
 	public static void main(String args[]){
 		
 		Machine m1 = new Machine();					
