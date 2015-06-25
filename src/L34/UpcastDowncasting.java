@@ -8,7 +8,9 @@ public class UpcastDowncasting {
 		Machine m6 = c1;
 		Digger d1 = new Digger();
 		Machine m7 = d1;
-		
+		Machine m3 = new Digger();				// We can't call the dig() method because this alone can only access methods common to both the parent and the child class.
+	//	Digger d9 = m7;							// This gives an error saying cannot convert from machine to digger.
+		Digger d9 = (Digger) m7;				// This works because we've cast the variable from being a Machine to being a digger. (It makes java happy that you know what you're doing - confirmation)
 		
 		m1.start();
 		c1.start();
@@ -19,10 +21,9 @@ public class UpcastDowncasting {
 												// because the Machine class doesn't have a snap method.
 		d1.start();
 		d1.dig();
-		m7.start();
-		
+		m7.start();	
+		d9.dig();
 	}
-
 }
 
 //________________________External Classes_________________________________________________________________________
@@ -56,8 +57,6 @@ class Digger extends Machine {
 		System.out.println("Digger is now digging a hole.");
 	}
 }
-
-
 /*
 * Upcasting and Downcasting or casting in general is a thing to do with variables.
 * Once an object is created eg a Machine or Camera object
@@ -70,4 +69,5 @@ class Digger extends Machine {
 * An alternative more subtle approach 
 * Machine m6 = c1;    -    we've upcasted the ref m6 to variable type Camera.
 * It's upcasting because of the hierarchy. We've gone up the class hierarchy from camera to machine.
+* DOWNCASTING - 
 */
