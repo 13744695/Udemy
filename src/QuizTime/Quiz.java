@@ -579,7 +579,7 @@ public class Quiz {
 						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",10,"1,024","1 Thousand","1 k");
 						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",16,"65,536","     ","64 k");
 						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",20,"1,048,576","1 Million","1 mb");
-						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",30,"1,073.741,824","1 Billion","1 gb");
+						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",30,"1,073,741,824","1 Billion","1 gb");
 						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",32,"4,294,967,296","4.2 Billion","4 gb");
 						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",40,"1,099,511,627,776","1 Trillion","1 tb");
 						System.out.println("     "+"");
