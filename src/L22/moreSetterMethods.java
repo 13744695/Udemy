@@ -27,8 +27,7 @@ public class moreSetterMethods {
 class Frog{
 	String name;
 	int age;
-	
-	
+
 	public String getName(){			// getter methods allow you to name, in this instance, all frog objects with a name 
 									// without needing to write the name code out for each one separately.
 									// in this instance the code is short but it could be more involved. 

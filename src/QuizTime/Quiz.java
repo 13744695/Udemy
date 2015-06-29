@@ -1,5 +1,6 @@
 package QuizTime;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import L27.Machine;
@@ -43,6 +44,7 @@ public class Quiz {
 				+ "\n i for inheritance "
 				+ "\n z for interfaces "
 				+ "\n p for public private protected & encapsulation "
+				+ "\n 2 for power of two"
 				+ "\n or 'exit'");
 		String ans1 = sc.nextLine();
 		
@@ -56,6 +58,7 @@ public class Quiz {
 		case "i" : inher(); break;
 		case "z" : interfaces(); break;
 		case "p" : ppp(); break;
+		case "2" : pow2(); break;
 		
 		case "exit" : System.out.println("Thank you for taking our quiz, we hope you learned something while you were here. \n Happy Java!!"); break;
 		default: openQuiz();						// invalid value: then run the openQuiz method again
@@ -525,6 +528,64 @@ public class Quiz {
 						System.out.println("     "+"You can declare public variables but that would usually be when variables are both final and static. \n final means the value can never be changed \n static meaning it's a class variable.");
 						System.out.println("     "+"Getters and setters are used to let people access this variable.\n note: SOURCE - GENERATE GETTERS AND SETTERS - will auto generate the getter and setter methods for you \n note: if a variable is final, then eclipse knows that there's no use for a setter method and won't auto generate one");
 						System.out.println();
+						
+						Scanner sc1 = new Scanner(System.in);
+						System.out.println("WHEN READY TO GO BACK TO CHOICES TYPE \"go\" OR \"exit\" to exit");
+						String go1 = sc.nextLine();	
+						 if (go1.equalsIgnoreCase("go")){
+							 openQuiz();
+						 }
+						 else if(go1.equalsIgnoreCase("exit")){
+							System.out.println("Thank you for taking our quiz, we hope you learned something while you were here. \n Happy Java!!");
+						 }
+					}
+					}
+			
+				//_____________________________________________________Powers of two______________________________________________________________________________________
+				
+				public static void pow2() {
+					
+					// plan to build an array of questions, so that they can be accessed randomly
+					
+					System.out.println("Please write down the questions and solutions to each of the following and compare with answer sheet when complete");
+					System.out.println("It is said that these power of 2's need to be committed to memory, esp prior to interviews");
+					System.out.println();
+					
+					ArrayList<String> l1 = new ArrayList();
+					
+					l1.add("What is 7 to the power of 2?");
+					l1.add("What is 8 to the power of 2?");
+					l1.add("What is 10 to the power of 2?");
+					l1.add("What is 16 to the power of 2?");
+					l1.add("What is 20 to the power of 2?");
+					l1.add("What is 30 to the power of 2?");
+					l1.add("What is 32 to the power of 2?");
+					l1.add("What is 40 to the power of 2?");
+					
+					for(String value : l1){
+					System.out.println(value);
+					}
+					
+					Scanner sc = new Scanner(System.in);
+					System.out.println("WHEN READY TO VIEW ANSWERS TYPE \"go\"");
+					String go = sc.nextLine();
+					
+					if (go.equals("go")){
+					
+						System.out.println("     "+"The following numbers to the power of two are:");
+						System.out.println();
+						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",  7, "128","","" );
+						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n", 8, "256","","");
+						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",10,"1,024","1 Thousand","1 k");
+						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",16,"65,536","     ","64 k");
+						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",20,"1,048,576","1 Million","1 mb");
+						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",30,"1,073.741,824","1 Billion","1 gb");
+						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",32,"4,294,967,296","4.2 Billion","4 gb");
+						System.out.printf("     "+"Power of 2: %5d ;    Exact Value: %20s ;    Approx: %12s ;    bytes: %6s \n",40,"1,099,511,627,776","1 Trillion","1 tb");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						System.out.println("     "+"");
+						
 						
 						Scanner sc1 = new Scanner(System.in);
 						System.out.println("WHEN READY TO GO BACK TO CHOICES TYPE \"go\" OR \"exit\" to exit");
